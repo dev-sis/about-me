@@ -1,0 +1,586 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: whitesmoke;
+}
+
+.head{
+    background-color: rgb(0, 0, 19);
+    width: 100%;
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.head .logo{
+    width: 30px;
+    border: 1px solid darkorange;
+    border-radius: 50%;
+    height: 30px;
+}
+
+.head header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 30px;
+    gap: 50px;
+}
+
+
+.head nav{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.head nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.head nav a:hover{
+    color: darkorange;
+}
+
+.head nav a.active{
+    color: darkorange;
+}
+
+.head .web{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+.head .web .image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.head .web .image img{
+    border-radius: 50%; 
+    border: 3px solid darkorange;
+    width: 120px; 
+    height: 120px; 
+}
+
+.head .web .image p{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.head .web .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 9px;
+    padding-bottom: 15px ;
+}
+
+.head .web .name h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.head .web .name button{
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+}
+
+.head .web .name button a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.head .web .name button a:hover{
+    color: darkorange;
+}
+
+.middle{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+.middle .first{
+    width: 100%;
+    color: black;
+    font-weight: 100;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.middle .computer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.middle .computer img{
+    border: 4px solid darkorange;
+    width: 250px;
+    height: 250px;
+}
+
+.middle h1{
+    font-weight: 100;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+.tail{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+}
+
+.tail .comment{
+    border: 2px;
+    background-color: white;
+    width: 20%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap:15px;
+
+
+}
+
+.comment img{
+    border: 3px solid darkorange;
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+}
+
+.comment p{
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+
+}
+
+.tail .comment-2{
+    border: 2px;
+    background-color: white;
+    width: 20%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap:25px;
+
+}
+
+.tail .comment-2 img{
+    border: 3px solid darkorange;
+    border-radius: 50%;
+    width: 98px;
+    height: 98px;
+}
+
+.tail .comment-2 p{
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 10px 0;
+}
+
+footer p{
+    font-size: 15px;
+    font-weight: 100;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    
+}
+
+@media(max-width: 500px){
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    main{
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: whitesmoke;
+    }
+    
+    .head{
+        background-color: rgb(0, 0, 19);
+        width: 100%;
+        height: 250px;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .head .logo{
+        width: 30px;
+        border: 1px solid darkorange;
+        border-radius: 50%;
+        height: 30px;
+    }
+    
+    .head header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        padding: 30px;
+    }
+    
+    
+    .head nav{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .head nav a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .head nav a:hover{
+        color: darkorange;
+    }
+    
+    .head nav a.active{
+        color: darkorange;
+    }
+    
+    .head .web{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+    
+    .head .web .image{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    
+    .head .web .image img{
+        border-radius: 50%; 
+        border: 3px solid darkorange;
+        width: 120px; 
+        height: 120px; 
+    }
+    
+    .head .web .image p{
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        width: 100%;
+    }
+    
+    .head .web .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 9px;
+        padding-bottom: 15px ;
+        width: 100%;
+    }
+    
+    .head .web .name h1{
+        color: white;
+        font-size: 35px;
+        font-weight: 400;
+        width: 100%;
+    }
+    
+    .head .web .name button{
+        font-size: 15px;
+        color: white;
+        background-color: transparent;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 20px;
+    }
+    
+    .head .web .name button a{
+        text-decoration: none;
+        color: white;
+    
+    }
+    
+    .head .web .name button a:hover{
+        color: darkorange;
+    }
+    
+    .middle{
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        padding-top: 50px;
+        gap: 30px;
+    }
+    
+    .middle .first{
+        width: 100%;
+        color: black;
+        font-weight: 100;
+        font-size: 30px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    .middle .computer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .middle .computer img{
+        border: 4px solid darkorange;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .middle h1{
+        font-weight: 100;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 30px;
+        color: black;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .tail{
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 30px;
+    }
+    
+    .tail .comment{
+        border: 2px;
+        background-color: white;
+        width: 20%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap:15px;
+    
+    
+    }
+    
+    .comment img{
+        border: 3px solid darkorange;
+        border-radius: 50%;
+        width: 98px;
+        height: 98px;
+    }
+    
+    .comment p{
+        width: 100%;
+        font-size: 18px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    
+    }
+    
+    .tail .comment-2{
+        border: 2px;
+        background-color: white;
+        width: 20%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap:25px;
+    
+    }
+    
+    .tail .comment-2 img{
+        border: 3px solid darkorange;
+        border-radius: 50%;
+        width: 98px;
+        height: 98px;
+    }
+    
+    .tail .comment-2 p{
+        width: 100%;
+        font-size: 18px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    
+    }
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        padding: 10px 0;
+    }
+    
+    footer p{
+        font-size: 15px;
+        font-weight: 100;
+        color: black;
+        width: 100%;
+        text-align: center;
+        font-family: monospace;
+        
+    }
+
+}
